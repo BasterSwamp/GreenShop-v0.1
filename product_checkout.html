@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <title>Главная</title>
+</head>
+
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="header__content container">
+    <div class="header__body">
+      <a href="index.html" class="header__logo icon-logo">
+        <span>GREENSHOP</span>
+      </a>
+      <nav class="header__nav nav-header">
+        <ul class="nav-header__list">
+          <li class="nav-header__list-item">
+            <a href="index.html" class="nav-header__link @@indexActive">Home</a>
+          </li>
+          <li class="nav-header__list-item">
+            <a href="product_view.html" class="nav-header__link active"
+              >Shop</a
+            >
+          </li>
+          <li class="nav-header__link @@careActive">Plant Care</li>
+          <li class="nav-header__link @@blogsActive">Blogs</li>
+        </ul>
+      </nav>
+      <form action="#" class="header__form form-search">
+        <input
+          type="text"
+          class="form-search__input"
+          placeholder="Find your plants"
+        />
+        <a
+          href="product_view.html"
+          class="form-search__button icon-filter btn"
+        ></a>
+      </form>
+      <div class="header__devices devices-header">
+        <a href="#" class="devices-header__search icon-search"> </a>
+        <a href="product_cart.html" class="devices-header__basket icon-basket">
+          <span class="devices-header__quantity">0</span>
+        </a>
+        <a
+          href="#login"
+          class="devices-header__login btn icon-logout open-popup"
+        >
+          <span>Login</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main>
+        <div class="breadcrumbs">
+          <div class="breadcrumbs__container container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__list-item">
+                <a href="index.html" class="breadcrumbs__link main-link"
+                  >Home</a
+                >
+                /
+              </li>
+              <li class="breadcrumbs__list-item">
+                <a href="product_view.html" class="breadcrumbs__link">Shop</a> /
+              </li>
+              <li class="breadcrumbs__list-item">Checkout</li>
+            </ul>
+          </div>
+        </div>
+        <div class="checkout__container container">
+          <div class="checkout__form form-checkout">
+            <div class="checkout__title">Billing Address</div>
+            <form action="#" class="form-checkout__body body-form">
+              <div class="body-form__content">
+                <label for="1" class="body-form__label"
+                  >First Name<span>*</span></label
+                >
+                <input
+                  required
+                  id="1"
+                  type="text"
+                  class="body-form__input req"
+                />
+              </div>
+              <div class="body-form__content">
+                <label for="" class="body-form__label"
+                  >Last Name<span>*</span></label
+                >
+                <input required type="text" class="body-form__input" />
+              </div>
+              <div class="body-form__content">
+                <label for="" class="body-form__label"
+                  >Country / Region<span>*</span></label
+                >
+                <input
+                  required
+                  type="text"
+                  placeholder="Select a country / region"
+                  class="body-form__input"
+                />
+              </div>
+              <div class="body-form__content">
+                <label for="" class="body-form__label"
+                  >Town / City<span>*</span></label
+                >
+                <input required type="text" class="body-form__input" />
+              </div>
+              <div class="body-form__content">
+                <label for="" class="body-form__label"
+                  >Street Address<span>*</span></label
+                >
+                <input
+                  required
+                  type="text"
+                  placeholder="House number and street name"
+                  class="body-form__input"
+                />
+              </div>
+              <div class="body-form__content">
+                <label for="" class="body-form__label op">|</label>
+                <input
+                  type="text"
+                  placeholder="Appartment, suite, unit, etc. (optional)"
+                  class="body-form__input"
+                />
+              </div>
+              <div class="body-form__content">
+                <label for="" class="body-form__label"
+                  >State<span>*</span></label
+                >
+                <input
+                  required
+                  type="text"
+                  placeholder="Select a state"
+                  class="body-form__input"
+                />
+              </div>
+              <div class="body-form__content">
+                <label for="" class="body-form__label">Zip<span>*</span></label>
+                <input type="text" class="body-form__input" />
+              </div>
+              <div class="body-form__content">
+                <label for="" class="body-form__label"
+                  >Email address<span>*</span></label
+                >
+                <input required type="email" class="body-form__input" />
+              </div>
+              <div class="body-form__content">
+                <label for="" class="body-form__label"
+                  >Phone Number<span>*</span></label
+                >
+                <input required type="text" class="body-form__input" />
+              </div>
+              <div class="body-form__content">
+                <input
+                  type="checkbox"
+                  class="body-form__radio"
+                  id="differentAddress"
+                />
+                <label for="differentAddress" class="body-form__label-radio"
+                  >Ship to a different address?</label
+                >
+              </div>
+            </form>
+            <div class="form-checkout__textarea">
+              <label for="formMessage" class="body-form__label"
+                >Order notes (optional)</label
+              >
+              <textarea
+                name="message"
+                id="formMessage"
+                class="body-form__input"
+              ></textarea>
+            </div>
+          </div>
+          <div class="checkout_aside aside-checkout">
+            <div class="checkout__title">Your Order</div>
+            <div class="aside-checkout__subtitle">
+              <div class="aside-checkout__products">Products</div>
+              <div class="aside-checkout__subtotal">Subtotal</div>
+            </div>
+            <div class="aside-checkout__cart">
+              <ul class="selected-products__list">
+                <li class="selected-products__link link-product">
+                  <div class="link-product__column">
+                    <div class="link-product__preview">
+                      <img src="img/product/product1.png" alt="prew" />
+                    </div>
+                    <div class="link-product__description description-product">
+                      <div class="description-product__title">
+                        Barberton Daisy
+                      </div>
+                      <div class="description-product__number">
+                        SKU:<span> 1995751877966</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__count">(x2)</div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__subtotal price">$238.00</div>
+                  </div>
+                </li>
+                <li class="selected-products__link link-product">
+                  <div class="link-product__column">
+                    <div class="link-product__preview">
+                      <img src="img/product/product1.png" alt="prew" />
+                    </div>
+                    <div class="link-product__description description-product">
+                      <div class="description-product__title">
+                        Barberton Daisy
+                      </div>
+                      <div class="description-product__number">
+                        SKU:<span> 1995751877966</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__count">(x2)</div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__subtotal price">$238.00</div>
+                  </div>
+                </li>
+                <li class="selected-products__link link-product">
+                  <div class="link-product__column">
+                    <div class="link-product__preview">
+                      <img src="img/product/product1.png" alt="prew" />
+                    </div>
+                    <div class="link-product__description description-product">
+                      <div class="description-product__title">
+                        Barberton Daisy
+                      </div>
+                      <div class="description-product__number">
+                        SKU:<span> 1995751877966</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__count">(x2)</div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__subtotal price">$238.00</div>
+                  </div>
+                </li>
+                <li class="selected-products__link link-product">
+                  <div class="link-product__column">
+                    <div class="link-product__preview">
+                      <img src="img/product/product1.png" alt="prew" />
+                    </div>
+                    <div class="link-product__description description-product">
+                      <div class="description-product__title">
+                        Barberton Daisy
+                      </div>
+                      <div class="description-product__number">
+                        SKU:<span> 1995751877966</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__count">(x2)</div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__subtotal price">$238.00</div>
+                  </div>
+                </li>
+                <li class="selected-products__link link-product">
+                  <div class="link-product__column">
+                    <div class="link-product__preview">
+                      <img src="img/product/product1.png" alt="prew" />
+                    </div>
+                    <div class="link-product__description description-product">
+                      <div class="description-product__title">
+                        Barberton Daisy
+                      </div>
+                      <div class="description-product__number">
+                        SKU:<span> 1995751877966</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__count">(x2)</div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__subtotal price">$238.00</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="aside-checkout__price">
+              <div class="aside-checkout__coupon">
+                Have a coupon code? <a href="product_cart.html">Click here</a>
+              </div>
+              <ul class="shoping-cart__subtotal">
+                <li class="shoping-cart__list">
+                  Subtotal <span>$119.00</span>
+                </li>
+                <li class="shoping-cart__list">
+                  Coupon Discount <span>(-) 00.00</span>
+                </li>
+                <li class="shoping-cart__list">Shiping <span>$16.00</span></li>
+              </ul>
+              <a href="#" class="shoping-cart__charge">View shipping charge</a>
+              <div class="shoping-cart__total">
+                Total <span class="price">$135.00</span>
+              </div>
+              <div class="aside-checkout__payment payment-method">
+                <div class="checkout__title">Payment Method</div>
+                <div class="payment-method__container">
+                  <div class="payment-method__row">
+                    <input
+                      type="radio"
+                      checked
+                      id="paymentSystems"
+                      class="payment-method__input"
+                      name="method"
+                    />
+                    <label for="paymentSystems" class="payment-method__label">
+                      <div class="payment-method__accept">
+                        <div class="payment-method__image">
+                          <img src="../img/paypal.png" alt="" />
+                        </div>
+                        <duv class="payment-method__image">
+                          <img src="../img/master-card.png" alt="" />
+                        </duv>
+                        <div class="payment-method__image">
+                          <img src="../img/visa.png" alt="" />
+                        </div>
+                        <div class="payment-method__image">
+                          <img src="../img/american-express.png" alt="" />
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="payment-method__row">
+                    <input
+                      type="radio"
+                      id="dorectBankTransfer"
+                      class="payment-method__input"
+                      name="method"
+                    />
+                    <label
+                      for="dorectBankTransfer"
+                      class="payment-method__label"
+                      >Dorect bank transfer</label
+                    >
+                  </div>
+                  <div class="payment-method__row">
+                    <input
+                      type="radio"
+                      id="cashOrDelivery"
+                      class="payment-method__input"
+                      name="method"
+                    />
+                    <label for="cashOrDelivery" class="payment-method__label"
+                      >Cash on delivery</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <a href="#cart" class="aside-checkout__order btn open-popup">
+                Place Order
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+  <div class="footer__content container">
+    <div class="footer__top top-footer">
+      <div class="top-footer__rows">
+        <div class="top-footer__about-us about-us">
+          <div class="about-us__column">
+            <div class="about-us__image">
+              <img src="../img/about1.png" alt="" />
+            </div>
+            <div class="about-us__title">Garden Care</div>
+            <div class="about-us__subtitle">
+              We are an online plant shop offering a wide range of cheap and
+              trendy plants.
+            </div>
+          </div>
+          <div class="about-us__column">
+            <div class="about-us__image">
+              <img src="../img/about2.png" alt="" />
+            </div>
+            <div class="about-us__title">Plant Renovation</div>
+            <div class="about-us__subtitle">
+              We are an online plant shop offering a wide range of cheap and
+              trendy plants.
+            </div>
+          </div>
+          <div class="about-us__column">
+            <div class="about-us__image">
+              <img src="../img/about3.png" alt="" />
+            </div>
+            <div class="about-us__title">Watering Graden</div>
+            <div class="about-us__subtitle">
+              We are an online plant shop offering a wide range of cheap and
+              trendy plants.
+            </div>
+          </div>
+        </div>
+        <div class="top-footer__newsletters newsletters-footer">
+          <div class="newsletters-footer__title">
+            Would you like to join newsletters?
+          </div>
+          <form action="" class="newsletters-footer__form form-newsletters">
+            <input
+              type="text"
+              placeholder="enter your email address..."
+              class="form-newsletters__input"
+            />
+            <button class="form-newsletters__button btn" type="submit">
+              Join
+            </button>
+          </form>
+          <div class="newsletters-footer__subtitle">
+            We usually post offers and challenges in newsletter. We’re your
+            online houseplant destination. We offer a wide range of houseplants
+            and accessories shipped directly from our (green)house to yours!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__middle mid-footer">
+      <div class="mid-footer__logo">
+        <img src="../img/logo.svg" alt="" />
+      </div>
+      <ul class="mid-footer__list">
+        <li class="mid-footer__info icon-location">
+          <a href="https://maps.app.goo.gl/4dCEre2Khd7FKuCe7"
+            >70 West Buckingham Ave. Farmingdale, NY 11735</a
+          >
+        </li>
+        <li class="mid-footer__info icon-message">
+          <a href="">contact@greenshop.com</a>
+        </li>
+        <li class="mid-footer__info icon-call">
+          <a href="">+88 01911 717 490</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__bottom bot-footer">
+      <div class="bot-footer__rows">
+        <div class="bot-footer__info info-bot" data-spoilers="767.98, max">
+          <nav class="info-bot__column">
+            <div tabindex="-1" class="info-bot__title init" data-spoiler>
+              My Account
+            </div>
+            <ul class="info-bot__list">
+              <li class="info-bot__list-info">
+                <a href="" class="info-bot__link">My Account</a>
+              </li>
+              <li class="info-bot__list-info">
+                <a href="" class="info-bot__link">Our stores </a>
+              </li>
+              <li class="info-bot__list-info">
+                <a href="" class="info-bot__link">Contact us </a>
+              </li>
+              <li class="info-bot__list-info">
+                <a href="" class="info-bot__link">Career </a>
+              </li>
+              <li class="info-bot__list-info">
+                <a href="" class="info-bot__link">Specials</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="info-bot__column">
+            <div tabindex="-1" class="info-bot__title" data-spoiler>
+              Help & Guide
+            </div>
+            <ul class="info-bot__list">
+              <li class="info-bot__list-info">
+                <a href="" class="info-bot__link">Help Center </a>
+              </li>
+              <li class="info-bot__list-info">
+                <a href="" class="info-bot__link">How to Buy </a>
+              </li>
+              <li class="info-bot__list-info">
+                <a href="" class="info-bot__link">Shipping & Delivery </a>
+              </li>
+              <li class="info-bot__list-info">
+                <a href="" class="info-bot__link">Product Policy </a>
+              </li>
+              <li class="info-bot__list-info">
+                <a href="" class="info-bot__link">How to Return</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="info-bot__column">
+            <div tabindex="-1" class="info-bot__title" data-spoiler>
+              Categories
+            </div>
+            <ul class="info-bot__list">
+              <li class="info-bot__list-info">
+                <a href="" class="info-bot__link">House Plants </a>
+              </li>
+              <li class="info-bot__list-info">
+                <a href="" class="info-bot__link">Potter Plants </a>
+              </li>
+              <li class="info-bot__list-info">
+                <a href="" class="info-bot__link">Seeds </a>
+              </li>
+              <li class="info-bot__list-info">
+                <a href="" class="info-bot__link">Small Plants </a>
+              </li>
+              <li class="info-bot__list-info">
+                <a href="" class="info-bot__link">Accessories</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="bot-footer__rec rec-bot">
+          <div class="rec-bot__row">
+            <div class="rec-bot__media">
+              <div class="rec-bot__title">Social Media</div>
+              <div class="rec-bot__social">
+                <a href="#" class="rec-bot__icon icon-facebook"></a>
+                <a href="#" class="rec-bot__icon icon-instagram"></a>
+                <!-- <a href="#" class="rec-bot__icon icon-twitter"></a> -->
+                <a href="#" class="rec-bot__icon icon-twitter icon-x"></a>
+                <a href="#" class="rec-bot__icon icon-linkedin"></a>
+                <a href="#" class="rec-bot__icon icon-union"></a>
+              </div>
+            </div>
+            <div class="rec-bot__media">
+              <div class="rec-bot__title">We accept</div>
+              <div class="rec-bot__accept">
+                <div class="rec-bot__image">
+                  <img src="img/paypal.png" alt="" />
+                </div>
+                <duv class="rec-bot__image">
+                  <img src="img/icons/master-card.svg" alt="" />
+                </duv>
+                <div class="rec-bot__image">
+                  <img src="img/visa.png" alt="" />
+                </div>
+                <div class="rec-bot__image">
+                  <img src="img/american-express.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copy">© 2021 GreenShop. All Rights Reserved.</div>
+  </div>
+</footer>
+<div class="login" id="login">
+  <div class="login__body content-login content area">
+    <a href="#" class="content-login__close close-popup icon-close"></a>
+    <div class="content-login__container">
+      <div class="content-login__header header-login">
+        <a class="header-login__title active">Login</a>
+        <span>I</span>
+        <a href="#register" class="header-login__title open-popup">Register</a>
+      </div>
+      <form action="#" class="content-login__form form-login">
+        <div class="form-login__subtitle">
+          Enter your username and password to login.
+        </div>
+        <input
+          class="form-login__input"
+          type="text"
+          name="login"
+          placeholder="Username"
+        />
+        <div class="form-login__password">
+          <input
+            class="form-login__input"
+            type="password"
+            name="password"
+            placeholder="Password"
+          />
+          <a href="##" class="form-login__eye icon-hide"></a>
+        </div>
+        <a href="#" class="form-login__link">Forgot Password?</a>
+        <button type="submit" class="form-login__submit close-popup btn">
+          Login
+        </button>
+      </form>
+      <div class="content-login__footer footer-login">
+        <div class="footer-login__subtitle">Or login with</div>
+        <a href="#" class="footer-login__google">
+          <img src="img/icons/google-color.svg" alt="google-icon" />
+          Login with Google
+        </a>
+        <a href="#" class="footer-login__facebook">
+          <img src="img/icons/facebook-color.svg" alt="facebook-color" />
+          Login with Facebook
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="register" id="register">
+  <div class="register__body content-login content area">
+    <a href="##" class="content-login__close close-popup icon-close"></a>
+    <div class="content-login__container">
+      <div class="content-login__header header-login">
+        <a href="#login" class="header-login__title open-popup">Login</a>
+        <span>I</span>
+        <a class="header-login__title active">Register</a>
+      </div>
+      <form action="#" class="content-register__form form-login">
+        <div class="form-login__subtitle">
+          Enter your email and password to register.
+        </div>
+        <input
+          class="form-login__input"
+          type="text"
+          name="login"
+          placeholder="Username"
+        />
+        <input
+          class="form-login__input"
+          type="email"
+          name="email"
+          placeholder="Enter your email address"
+        />
+        <input
+          class="form-login__input"
+          type="password"
+          name="password"
+          placeholder="Password"
+        />
+        <a href="##" class="form-login__eye icon-hide"></a>
+        <input
+          class="form-login__input"
+          type="password"
+          name="password"
+          placeholder="Confirm Password"
+        />
+        <button type="submit" class="form-register__submit btn close-popup">
+          Register
+        </button>
+      </form>
+      <div class="content-login__footer footer-login">
+        <div class="footer-login__subtitle">Or register with</div>
+        <a href="#" class="footer-login__google">
+          <img src="img/icons/google-color.svg" alt="google-icon" />
+          Continue with Google
+        </a>
+        <a href="#" class="footer-login__facebook">
+          <img src="img/icons/facebook-color.svg" alt="facebook-color" />
+          Continue with Facebook
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="cart" id="cart">
+      <div class="cart__body content-cart area">
+        <div class="content-cart__header header-cart cart-content">
+          <a
+            href="#header"
+            class="header-cart__close close-popup icon-close"
+          ></a>
+          <div class="header-cart__image">
+            <img src="img/cart-header.png" alt="" />
+          </div>
+          <div class="header-cart__text">Your order has been received</div>
+        </div>
+        <div class="content-cart__info info-cart cart-content">
+          <div class="info-cart__column column-info">
+            <div class="column-info__title">Order Number</div>
+            <div class="column-info__value">19586687</div>
+          </div>
+          <div class="info-cart__column column-info">
+            <div class="column-info__title">Date</div>
+            <div id="dateContainer" class="column-info__value">
+              15 Sep, 2021
+            </div>
+          </div>
+          <div class="info-cart__column column-info">
+            <div class="column-info__title">Total</div>
+            <div class="column-info__value">2,699.00</div>
+          </div>
+          <div class="info-cart__column column-info">
+            <div class="column-info__title">Payment Method</div>
+            <div class="column-info__value">Cash on delivery</div>
+          </div>
+        </div>
+        <div class="content-cart__details order-details cart-content">
+          <div class="order-details__title">Order Details</div>
+          <div class="order-details__body selected-products">
+            <div class="selected-products__header">
+              <span>Products</span>
+              <span>Qty</span>
+              <span>Subtotal</span>
+            </div>
+            <div class="selected-products__main">
+              <ul class="selected-products__list">
+                <li class="selected-products__link link-product">
+                  <div class="link-product__column">
+                    <div class="link-product__preview">
+                      <img src="img/product/product1.png" alt="prew" />
+                    </div>
+                    <div class="link-product__description description-product">
+                      <div class="description-product__title">
+                        Barberton Daisy
+                      </div>
+                      <div class="description-product__number">
+                        SKU:<span> 1995751877966</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__count">(x2)</div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__subtotal price">$238.00</div>
+                  </div>
+                </li>
+                <li class="selected-products__link link-product">
+                  <div class="link-product__column">
+                    <div class="link-product__preview">
+                      <img src="img/product/product1.png" alt="prew" />
+                    </div>
+                    <div class="link-product__description description-product">
+                      <div class="description-product__title">
+                        Barberton Daisy
+                      </div>
+                      <div class="description-product__number">
+                        SKU:<span> 1995751877966</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__count">(x2)</div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__subtotal price">$238.00</div>
+                  </div>
+                </li>
+                <li class="selected-products__link link-product">
+                  <div class="link-product__column">
+                    <div class="link-product__preview">
+                      <img src="img/product/product1.png" alt="prew" />
+                    </div>
+                    <div class="link-product__description description-product">
+                      <div class="description-product__title">
+                        Barberton Daisy
+                      </div>
+                      <div class="description-product__number">
+                        SKU:<span> 1995751877966</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__count">(x2)</div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__subtotal price">$238.00</div>
+                  </div>
+                </li>
+                <li class="selected-products__link link-product">
+                  <div class="link-product__column">
+                    <div class="link-product__preview">
+                      <img src="img/product/product1.png" alt="prew" />
+                    </div>
+                    <div class="link-product__description description-product">
+                      <div class="description-product__title">
+                        Barberton Daisy
+                      </div>
+                      <div class="description-product__number">
+                        SKU:<span> 1995751877966</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__count">(x2)</div>
+                  </div>
+                  <div class="link-product__column">
+                    <div class="link-product__subtotal price">$238.00</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="selected-products__footer">
+              <div class="selected-products__shiping shiping-row">
+                <div class="shiping-row__title">Shiping</div>
+                <div class="shiping-row__price price">$16.00</div>
+              </div>
+              <div class="selected-products__total total-row">
+                <div class="total-row__title">Total</div>
+                <div class="total-row__price price">$0</div>
+              </div>
+            </div>
+          </div>
+          <div class="order-details__text">
+            Your order is currently being processed. You will receive an order
+            confirmation email shortly with the expected delivery date for your
+            items.
+          </div>
+        </div>
+        <div class="content-cart__button cart-content">
+          <form>
+            <input
+              type="submit"
+              value="Track your order"
+              class="content-cart__btn btn close-popup"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
