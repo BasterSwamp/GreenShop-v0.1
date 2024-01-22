@@ -14,7 +14,7 @@
 
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header lock-padding">
   <div class="header__content container">
     <div class="header__body">
       <a href="index.html" class="header__logo icon-logo">
@@ -34,17 +34,7 @@
           <li class="nav-header__link @@blogsActive">Blogs</li>
         </ul>
       </nav>
-      <form action="#" class="header__form form-search">
-        <input
-          type="text"
-          class="form-search__input"
-          placeholder="Find your plants"
-        />
-        <a
-          href="product_view.html"
-          class="form-search__button icon-filter btn"
-        ></a>
-      </form>
+
       <div class="header__devices devices-header">
         <a href="#" class="devices-header__search icon-search"> </a>
         <a href="product_cart.html" class="devices-header__basket icon-basket">
@@ -63,6 +53,17 @@
 
       <main>
         <div class="page-slider mainslider">
+          <form action="#" class="mainslider__form form-search">
+            <input
+              type="text"
+              class="form-search__input"
+              placeholder="Find your plants"
+            />
+            <a
+              href="product_view.html"
+              class="form-search__button icon-filter btn"
+            ></a>
+          </form>
           <div class="mainslider__container container swiper">
             <!-- Additional required wrapper -->
             <div class="mainslider__body swiper-wrapper">
@@ -145,7 +146,9 @@
                     >Shop Now</a
                   >
                 </div>
-                <img src="img/slide2.jpg" alt="" />
+                <div class="mainslider__image">
+                  <img src="img/slide2.jpg" alt="" />
+                </div>
               </div>
               <div class="mainslider__slide swiper-slide">
                 <div class="mainslider__content content-mainslider">
@@ -184,7 +187,9 @@
                     >Shop Now</a
                   >
                 </div>
-                <img src="img/slide2.jpg" alt="" />
+                <div class="mainslider__image">
+                  <img src="img/slide2.jpg" alt="" />
+                </div>
               </div>
             </div>
             <!-- If we need pagination -->
@@ -313,7 +318,7 @@
             </div>
             <div class="products__page page-products">
               <div class="page-products__row">
-                <div class="page-products__product product-page">
+                <div class="page-products__product product-page" id="el1">
                   <div class="product-page__image image-product">
                     <img
                       src="img/product/product1.png"
@@ -342,7 +347,7 @@
                     <div class="product-page__previous-price"></div>
                   </div>
                 </div>
-                <div class="page-products__product product-page">
+                <div class="page-products__product product-page" id="el2">
                   <div class="product-page__image image-product">
                     <img
                       src="img/product/product2.png"
@@ -371,7 +376,7 @@
                     <div class="product-page__previous-price"></div>
                   </div>
                 </div>
-                <div class="page-products__product product-page">
+                <div class="page-products__product product-page" id="el3">
                   <div class="product-page__image image-product">
                     <img
                       src="img/product/product3.png"
@@ -935,6 +940,9 @@
   <div class="login__body content-login content area">
     <a href="#" class="content-login__close close-popup icon-close"></a>
     <div class="content-login__container">
+      <div class="content-login__logo">
+        <img src="img/icons/logo-mini.svg" alt="" />
+      </div>
       <div class="content-login__header header-login">
         <a class="header-login__title active">Login</a>
         <span>I</span>

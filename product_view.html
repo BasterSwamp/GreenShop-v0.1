@@ -14,7 +14,7 @@
 
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header lock-padding">
   <div class="header__content container">
     <div class="header__body">
       <a href="index.html" class="header__logo icon-logo">
@@ -34,17 +34,7 @@
           <li class="nav-header__link @@blogsActive">Blogs</li>
         </ul>
       </nav>
-      <form action="#" class="header__form form-search">
-        <input
-          type="text"
-          class="form-search__input"
-          placeholder="Find your plants"
-        />
-        <a
-          href="product_view.html"
-          class="form-search__button icon-filter btn"
-        ></a>
-      </form>
+
       <div class="header__devices devices-header">
         <a href="#" class="devices-header__search icon-search"> </a>
         <a href="product_cart.html" class="devices-header__basket icon-basket">
@@ -117,11 +107,18 @@
                       <div class="slider-aside__loop icon-search"></div>
                     </div>
                   </div>
+                  <div class="swiper-pagination"></div>
                 </div>
               </div>
               <div class="header-mainshop__info info-mainshop">
                 <div class="info-mainshop__top top-info">
-                  <div class="top-info__title">Barberton Daisy</div>
+                  <div class="top-info__row">
+                    <div class="top-info__title">Barberton Daisy</div>
+                    <div class="top-info__mobile_ranking">
+                      <div class="top-info__star icon-star active"></div>
+                      <div class="top-info__value">4.8<span>(19)</span></div>
+                    </div>
+                  </div>
                   <div class="top-info__subtitle">
                     <div class="top-info__price">$119.00</div>
                     <ul class="top-info__ranking">
@@ -175,17 +172,26 @@
                   </div>
                   <div class="body-info__buttons button-info">
                     <div class="button-info__counter counter-info" data-counter>
-                      <div class="counter-info__btn minus" data-action>-</div>
-                      <div class="counter-info__value">
-                        <input type="text" disabled value="1" />
+                      <div class="counter-info__column">
+                        <div class="counter-info__title">Qty</div>
+                        <div class="counter-info__btn minus" data-action>-</div>
+                        <div class="counter-info__value">
+                          <input type="text" disabled value="1" />
+                        </div>
+                        <div class="counter-info__btn plus" data-action>+</div>
                       </div>
-                      <div class="counter-info__btn plus" data-action>+</div>
+                      <div class="counter-info__column">
+                        <div class="counter-info__price price">$119.00</div>
+                      </div>
                     </div>
                     <div class="button-info__row">
                       <a href="product_cart.html" class="button-info__buy"
                         >Buy now</a
                       >
-                      <a href="#" class="button-info__add">Add to cart</a>
+                      <a href="#" class="button-info__add"
+                        ><div class="button-info__add_icon icon-shop"></div>
+                        <span>Add to cart</span></a
+                      >
                       <a href="#" class="button-info__like icon-like"></a>
                     </div>
                   </div>
@@ -623,6 +629,9 @@
   <div class="login__body content-login content area">
     <a href="#" class="content-login__close close-popup icon-close"></a>
     <div class="content-login__container">
+      <div class="content-login__logo">
+        <img src="img/icons/logo-mini.svg" alt="" />
+      </div>
       <div class="content-login__header header-login">
         <a class="header-login__title active">Login</a>
         <span>I</span>
