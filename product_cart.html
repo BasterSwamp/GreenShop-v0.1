@@ -68,8 +68,8 @@
             </ul>
           </div>
         </div>
-        <div class="shoping-cart__container container">
-          <div class="shoping-cart__body cart-products">
+        <div class="shopping-cart__container container">
+          <div class="shopping-cart__body cart-products">
             <div class="cart-products__header">
               <span>Products</span>
               <span>Price</span>
@@ -80,7 +80,7 @@
               <ul class="cart-products__list"></ul>
             </div>
           </div>
-          <aside class="shoping-cart__aside aside-cart">
+          <aside class="shopping-cart__aside aside-cart">
             <div class="aside-cart__title">Cart Totals</div>
             <form action="#" class="aside-cart__form form-aside">
               <label for="coupon" class="form-aside__label">Coupon Apply</label>
@@ -97,21 +97,26 @@
                 <button class="form-aside__btn btn">Apply</button>
               </div>
             </form>
-            <ul class="shoping-cart__subtotal">
-              <li class="shoping-cart__list">Subtotal <span>$119.00</span></li>
-              <li class="shoping-cart__list">
+            <ul class="shopping-cart__subtotal">
+              <li class="shopping-cart__list">
+                Subtotal <span class="shopping-cart__price"></span>
+              </li>
+              <li class="shopping-cart__list">
                 Coupon Discount <span>(-) 00.00</span>
               </li>
-              <li class="shoping-cart__list">Shiping <span>$16.00</span></li>
+              <li class="shopping-cart__list">
+                Shipping <span class="shopping-cart__shipping">$16.00</span>
+              </li>
             </ul>
-            <a href="#" class="shoping-cart__charge">View shipping charge</a>
-            <div class="shoping-cart__total">
-              Total <span class="price">$135.00</span>
+            <a href="#" class="shopping-cart__charge">View shipping charge</a>
+            <div class="shopping-cart__total">
+              Total
+              <span class="shopping-cart__total-price price"></span>
             </div>
-            <a href="product_checkout.html" class="shoping-cart__checkout btn">
+            <a href="product_checkout.html" class="shopping-cart__checkout btn">
               Proceed To Checkout
             </a>
-            <a href="product_view.html" class="shoping-cart__continue"
+            <a href="index.html" class="shopping-cart__continue"
               >Continue Shopping</a
             >
           </aside>

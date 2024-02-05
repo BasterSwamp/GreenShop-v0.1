@@ -1706,7 +1706,7 @@ h6 {
   justify-content: end;
 }
 .pagination-products__list-item {
-  margin: 50px 0px 0px 10px;
+  margin: 80px 0px 0px 10px;
 }
 .pagination-products__list-link {
   color: #3d3d3d;
@@ -2081,7 +2081,7 @@ h6 {
   font-weight: 700;
 }
 
-.shoping-cart__container {
+.shopping-cart__container {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -2089,14 +2089,14 @@ h6 {
   display: flex;
 }
 @media (max-width: 61.99875em) {
-  .shoping-cart__container {
+  .shopping-cart__container {
     flex-wrap: wrap;
   }
 }
-.shoping-cart__subtotal {
+.shopping-cart__subtotal {
   margin: 30px 0px -7px 0px;
 }
-.shoping-cart__list {
+.shopping-cart__list {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
@@ -2105,12 +2105,14 @@ h6 {
   line-height: 1.06;
   padding: 0px 0px 15px 0px;
 }
-.shoping-cart__list:first-child span, .shoping-cart__list:last-child span {
+.shopping-cart__list:first-child span, .shopping-cart__list:last-child span {
   font-weight: 500;
   font-size: 1.125em;
   line-height: 0.83;
+  width: 100px;
+  text-align: right;
 }
-.shoping-cart__charge {
+.shopping-cart__charge {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -2123,11 +2125,11 @@ h6 {
   transition: all 0.2s ease 0s;
 }
 @media (min-width: 61.99875em) {
-  .shoping-cart__charge:hover {
+  .shopping-cart__charge:hover {
     color: #246753;
   }
 }
-.shoping-cart__total {
+.shopping-cart__total {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
@@ -2135,13 +2137,17 @@ h6 {
   font-weight: 700;
   padding: 27px 0px;
 }
-.shoping-cart__checkout {
+.shopping-cart__total span {
+  width: 100px;
+  text-align: right;
+}
+.shopping-cart__checkout {
   width: 100%;
   border-radius: 3px;
   padding: 12px 0;
   text-align: center;
 }
-.shoping-cart__continue {
+.shopping-cart__continue {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -2155,7 +2161,7 @@ h6 {
   transition: all 0.2s ease 0s;
 }
 @media (min-width: 61.99875em) {
-  .shoping-cart__continue:hover {
+  .shopping-cart__continue:hover {
     color: #246753;
   }
 }
@@ -2249,7 +2255,6 @@ h6 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 40px 0px;
 }
 .empty-cart__text {
   font-size: 1.25em;
@@ -2387,6 +2392,7 @@ h6 {
 
 .aside-cart {
   margin: 0px 0px 0px 86px;
+  width: 332px;
 }
 .aside-cart__title {
   color: #3d3d3d;
@@ -2399,6 +2405,7 @@ h6 {
 @media (max-width: 76.875em) {
   .aside-cart {
     margin: 0px 0px 0px 56px;
+    width: 400px;
   }
 }
 @media (max-width: 61.99875em) {
@@ -3643,7 +3650,7 @@ textarea::-webkit-scrollbar-thumb {
 .selected-products__footer {
   padding: 0px 0px 0px 160px;
 }
-.selected-products__shiping {
+.selected-products__shipping {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -3651,7 +3658,7 @@ textarea::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0px 25px 0px;
+  padding: 15px 0px 20px 0px;
 }
 .selected-products__total {
   display: -webkit-box;
@@ -3718,12 +3725,12 @@ textarea::-webkit-scrollbar-thumb {
   color: #727272;
 }
 
-.shiping-row__title {
+.shipping-row__title {
   color: #3d3d3d;
   font-size: 0.9375em;
   line-height: 1.06;
 }
-.shiping-row__price {
+.shipping-row__price {
   color: #3d3d3d;
   font-weight: 500;
 }
@@ -4236,17 +4243,17 @@ textarea::-webkit-scrollbar-thumb {
   transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
   background-color: #fff;
   position: relative;
+  text-align: right;
 }
 .content-login__close {
-  padding: 12px 12px 0 0;
   color: #174e22;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: end;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
   transition: all 0.2s ease 0s;
+  padding: 0px 14px 0px 0px;
 }
 @media (min-width: 61.99875em) {
   .content-login__close:hover {

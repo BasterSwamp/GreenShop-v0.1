@@ -182,7 +182,7 @@
             </div>
             <div class="aside-checkout__cart">
               <ul class="selected-products__list">
-                <li class="selected-products__link link-product">
+                <!-- <li class="selected-products__link link-product">
                   <div class="link-product__column">
                     <div class="link-product__preview">
                       <img src="img/product/product1.png" alt="prew" />
@@ -202,109 +202,27 @@
                   <div class="link-product__column">
                     <div class="link-product__subtotal price">$238.00</div>
                   </div>
-                </li>
-                <li class="selected-products__link link-product">
-                  <div class="link-product__column">
-                    <div class="link-product__preview">
-                      <img src="img/product/product1.png" alt="prew" />
-                    </div>
-                    <div class="link-product__description description-product">
-                      <div class="description-product__title">
-                        Barberton Daisy
-                      </div>
-                      <div class="description-product__number">
-                        SKU:<span> 1995751877966</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="link-product__column">
-                    <div class="link-product__count">(x2)</div>
-                  </div>
-                  <div class="link-product__column">
-                    <div class="link-product__subtotal price">$238.00</div>
-                  </div>
-                </li>
-                <li class="selected-products__link link-product">
-                  <div class="link-product__column">
-                    <div class="link-product__preview">
-                      <img src="img/product/product1.png" alt="prew" />
-                    </div>
-                    <div class="link-product__description description-product">
-                      <div class="description-product__title">
-                        Barberton Daisy
-                      </div>
-                      <div class="description-product__number">
-                        SKU:<span> 1995751877966</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="link-product__column">
-                    <div class="link-product__count">(x2)</div>
-                  </div>
-                  <div class="link-product__column">
-                    <div class="link-product__subtotal price">$238.00</div>
-                  </div>
-                </li>
-                <li class="selected-products__link link-product">
-                  <div class="link-product__column">
-                    <div class="link-product__preview">
-                      <img src="img/product/product1.png" alt="prew" />
-                    </div>
-                    <div class="link-product__description description-product">
-                      <div class="description-product__title">
-                        Barberton Daisy
-                      </div>
-                      <div class="description-product__number">
-                        SKU:<span> 1995751877966</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="link-product__column">
-                    <div class="link-product__count">(x2)</div>
-                  </div>
-                  <div class="link-product__column">
-                    <div class="link-product__subtotal price">$238.00</div>
-                  </div>
-                </li>
-                <li class="selected-products__link link-product">
-                  <div class="link-product__column">
-                    <div class="link-product__preview">
-                      <img src="img/product/product1.png" alt="prew" />
-                    </div>
-                    <div class="link-product__description description-product">
-                      <div class="description-product__title">
-                        Barberton Daisy
-                      </div>
-                      <div class="description-product__number">
-                        SKU:<span> 1995751877966</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="link-product__column">
-                    <div class="link-product__count">(x2)</div>
-                  </div>
-                  <div class="link-product__column">
-                    <div class="link-product__subtotal price">$238.00</div>
-                  </div>
-                </li>
+                </li> -->
               </ul>
             </div>
             <div class="aside-checkout__price">
               <div class="aside-checkout__coupon">
                 Have a coupon code? <a href="product_cart.html">Click here</a>
               </div>
-              <ul class="shoping-cart__subtotal">
-                <li class="shoping-cart__list">
-                  Subtotal <span>$119.00</span>
+              <ul class="shopping-cart__subtotal">
+                <li class="shopping-cart__list">
+                  Subtotal <span class="shopping-cart__price"></span>
                 </li>
-                <li class="shoping-cart__list">
+                <li class="shopping-cart__list">
                   Coupon Discount <span>(-) 00.00</span>
                 </li>
-                <li class="shoping-cart__list">Shiping <span>$16.00</span></li>
+                <li class="shopping-cart__list">
+                  Shipping <span class="shopping-cart__shipping">$16.00</span>
+                </li>
               </ul>
-              <a href="#" class="shoping-cart__charge">View shipping charge</a>
-              <div class="shoping-cart__total">
-                Total <span class="price">$135.00</span>
+              <a href="#" class="shopping-cart__charge">View shipping charge</a>
+              <div class="shopping-cart__total">
+                Total <span class="shopping-cart__total-price price"></span>
               </div>
               <div class="aside-checkout__payment payment-method">
                 <div class="checkout__title">Payment Method</div>
@@ -316,6 +234,7 @@
                       id="paymentSystems"
                       class="payment-method__input"
                       name="method"
+                      value="Payment Systems"
                     />
                     <label for="paymentSystems" class="payment-method__label">
                       <div class="payment-method__accept">
@@ -337,24 +256,26 @@
                   <div class="payment-method__row">
                     <input
                       type="radio"
-                      id="dorectBankTransfer"
+                      id="directBankTransfer"
                       class="payment-method__input"
                       name="method"
+                      value="Direct Bank Transfer"
                     />
                     <label
-                      for="dorectBankTransfer"
+                      for="directBankTransfer"
                       class="payment-method__label"
-                      >Dorect bank transfer</label
+                      >Direct bank transfer</label
                     >
                   </div>
                   <div class="payment-method__row">
                     <input
                       type="radio"
-                      id="cashOrDelivery"
+                      id="cashOnDelivery"
                       class="payment-method__input"
                       name="method"
+                      value="Cash on Delivery"
                     />
-                    <label for="cashOrDelivery" class="payment-method__label"
+                    <label for="cashOnDelivery" class="payment-method__label"
                       >Cash on delivery</label
                     >
                   </div>
@@ -673,21 +594,21 @@
         <div class="content-cart__info info-cart cart-content">
           <div class="info-cart__column column-info">
             <div class="column-info__title">Order Number</div>
-            <div class="column-info__value">19586687</div>
+            <div class="column-info__value" id="valOrderNum">19586687</div>
           </div>
           <div class="info-cart__column column-info">
             <div class="column-info__title">Date</div>
-            <div id="dateContainer" class="column-info__value">
-              15 Sep, 2021
-            </div>
+            <div id="valDate" class="column-info__value">15 Sep, 2021</div>
           </div>
           <div class="info-cart__column column-info">
             <div class="column-info__title">Total</div>
-            <div class="column-info__value">2,699.00</div>
+            <div class="column-info__value" id="valTotalPrice">2,699.00</div>
           </div>
           <div class="info-cart__column column-info">
             <div class="column-info__title">Payment Method</div>
-            <div class="column-info__value">Cash on delivery</div>
+            <div class="column-info__value" id="valPaymentMethod">
+              Cash on delivery
+            </div>
           </div>
         </div>
         <div class="content-cart__details order-details cart-content">
@@ -700,7 +621,7 @@
             </div>
             <div class="selected-products__main">
               <ul class="selected-products__list">
-                <li class="selected-products__link link-product">
+                <!-- <li class="selected-products__link link-product">
                   <div class="link-product__column">
                     <div class="link-product__preview">
                       <img src="img/product/product1.png" alt="prew" />
@@ -720,76 +641,13 @@
                   <div class="link-product__column">
                     <div class="link-product__subtotal price">$238.00</div>
                   </div>
-                </li>
-                <li class="selected-products__link link-product">
-                  <div class="link-product__column">
-                    <div class="link-product__preview">
-                      <img src="img/product/product1.png" alt="prew" />
-                    </div>
-                    <div class="link-product__description description-product">
-                      <div class="description-product__title">
-                        Barberton Daisy
-                      </div>
-                      <div class="description-product__number">
-                        SKU:<span> 1995751877966</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="link-product__column">
-                    <div class="link-product__count">(x2)</div>
-                  </div>
-                  <div class="link-product__column">
-                    <div class="link-product__subtotal price">$238.00</div>
-                  </div>
-                </li>
-                <li class="selected-products__link link-product">
-                  <div class="link-product__column">
-                    <div class="link-product__preview">
-                      <img src="img/product/product1.png" alt="prew" />
-                    </div>
-                    <div class="link-product__description description-product">
-                      <div class="description-product__title">
-                        Barberton Daisy
-                      </div>
-                      <div class="description-product__number">
-                        SKU:<span> 1995751877966</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="link-product__column">
-                    <div class="link-product__count">(x2)</div>
-                  </div>
-                  <div class="link-product__column">
-                    <div class="link-product__subtotal price">$238.00</div>
-                  </div>
-                </li>
-                <li class="selected-products__link link-product">
-                  <div class="link-product__column">
-                    <div class="link-product__preview">
-                      <img src="img/product/product1.png" alt="prew" />
-                    </div>
-                    <div class="link-product__description description-product">
-                      <div class="description-product__title">
-                        Barberton Daisy
-                      </div>
-                      <div class="description-product__number">
-                        SKU:<span> 1995751877966</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="link-product__column">
-                    <div class="link-product__count">(x2)</div>
-                  </div>
-                  <div class="link-product__column">
-                    <div class="link-product__subtotal price">$238.00</div>
-                  </div>
-                </li>
+                </li> -->
               </ul>
             </div>
             <div class="selected-products__footer">
-              <div class="selected-products__shiping shiping-row">
-                <div class="shiping-row__title">Shiping</div>
-                <div class="shiping-row__price price">$16.00</div>
+              <div class="selected-products__shipping shipping-row">
+                <div class="shipping-row__title">Shipping</div>
+                <div class="shipping-row__price">$16.00</div>
               </div>
               <div class="selected-products__total total-row">
                 <div class="total-row__title">Total</div>
